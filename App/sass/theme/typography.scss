@@ -1,0 +1,15 @@
+//MARK: Font families and base
+$font-family-sans-serif:    'Lato', sans-serif !default;
+$font-family-serif:         'Source Serif Pro', serif;
+$font-family-base:          $font-family-sans-serif;
+
+//MARK: Font Size & weight
+$font-size-base:            15px;
+$font-weight-base:          light;
+
+$line-height-base:          1.4 !default;
+
+//MARK: Headings family
+$headings-font-family:      'Lato', sans-serif !default;
+$headings-font-weight:      700 !default;
+$headings-line-height:      1.5 !default;

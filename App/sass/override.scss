@@ -1,3 +1,13 @@
+//MARK: Html Element
+body {
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    font-weight: $font-weight-base;
+}
+h1 {
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+}
 //MARK: Alignment, Margin, and Padding override
 .text-center {
     text-align: center
