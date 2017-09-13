@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: [
         path.join(__dirname, 'main.js'),
-        path.join(__dirname, '/App/theme/main.scss')
+        path.join(__dirname, '/App/sass/main.scss')
     ],
     output: {
         path: path.join(__dirname, 'static/js'),
@@ -31,10 +31,11 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ['style-loader', 'css-loader', 'sass-loader']
             },
-            {
-                test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-                loader: 'file-loader'
-            },
+            
+            // {
+            //     test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+            //     loader: 'file-loader'
+            // },
         ]
     },
     plugins: [/*for webpack plugins*/],

@@ -1,0 +1,9 @@
+$bootstrap-sass-asset-helper: true; //this will make bootstrap sass available for the project
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "./theme/color-scheme.scss";
+@import "./theme/typography.scss";
+@import "./override.scss";
+
+
+

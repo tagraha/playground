@@ -1,0 +1,26 @@
+//MARK: Alignment, Margin, and Padding override
+.text-center {
+    text-align: center
+}
+.marg-zero {
+    margin: 0;
+}
+.margbot-zero {
+    margin-bottom: 0;
+}
+.margtop-zero {
+    margin-top: 0;
+}
+.padd-zero {
+    padding: 0
+}
+.paddbot-zero {
+    padding-bottom: 0
+}
+.paddtop-zero {
+    padding-top: 0
+}
+
+.marg-center {
+    margin: 0 auto;
+}
