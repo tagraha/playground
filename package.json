@@ -1,5 +1,5 @@
 {
-  "name": "arga-playground",
+  "name": "the-playground",
   "version": "1.0.0",
   "description": "A playground for testing and/or experimenting with react library",
   "main": "main.js",
@@ -10,7 +10,8 @@
     "build": "babel  App -d dist --presets react,es2015,stage-0",
     "serve": "node dist/server.js",
     "babel": "babel",
-    "webpack": "webpack --watch"
+    "webpack": "webpack --watch",
+    "sync-assets": "cp -r ./App/sass/* node_modules/bootstrap-sass/assets/stylesheets;"
   },
   "keywords": [
     "playground",

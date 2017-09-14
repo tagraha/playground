@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import { Header } from '../../components';
 
 class MainContainer extends Component {
-    constructor(){
-        super()
-        
-        this.state = {
-            welcomeText: 'Welcome to the Playground!'
-        }
-    }
+  constructor(){
+    super()
+  }
 
-    render(){
-        const { welcomeText } = this.state;
-        return(
-            <div className="container">{welcomeText}</div>
-        )
+  render(){
+    const { children } = this.props;
+      return (
+          <div className="container">
+           {children}
+          </div>
+      )
     }
 }
 

@@ -1,0 +1,14 @@
+.heavy-font {
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height
+}
+
+.medium-font {
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+}
+
+.lighter-font {
+    font-weight: light;
+    line-height: $line-height-base;
+}
