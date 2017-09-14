@@ -54,3 +54,13 @@ a {
 .paddtop-120 {
     padding-top: 120px;
 }
+
+//MARK: For Analytics
+.ct-chart {
+    .ct-bar {
+        stroke: $accent-cheerful;
+    }
+}
+.ct-bar {
+    stroke-width: 15px;
+}
