@@ -8,6 +8,23 @@ h1 {
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
 }
+li {
+    list-style: none;
+    &.with-bullet{
+        list-style: bullet;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: $accent-fiery;
+    }
+    &:active {
+        color: $accent-fiery;
+    }
+}
 //MARK: Alignment, Margin, and Padding override
 .text-center {
     text-align: center
@@ -33,4 +50,7 @@ h1 {
 
 .marg-center {
     margin: 0 auto;
+}
+.paddtop-120 {
+    padding-top: 120px;
 }

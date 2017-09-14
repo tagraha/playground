@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class Showcase extends Component {
     constructor() {
         super();
-        // this.state = {
-        //     testLifeCycle: []
-        // }
+        this.state = {
+            testLifeCycle: []
+        }
     }
 
     componentDidMount() {
-        // this.setState({testLifeCycle: [0, 1, 2, 3, 4]})
+        this.setState({testLifeCycle: [0, 1, 2, 3, 4]})
     }
 
     render() {

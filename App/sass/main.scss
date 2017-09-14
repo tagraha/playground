@@ -5,5 +5,18 @@ $bootstrap-sass-asset-helper: true; //this will make bootstrap sass available fo
 @import "./theme/typography.scss";
 @import "./override.scss";
 
-
+.header {
+    background-color: $accent-dark;
+    > h1 {
+        color: $white;
+        padding: 15px 15px;
+    }
+}
+.wrap {
+    width: 100%
+}
+.iframe-home {
+    max-height: 200px;
+    text-align: center;
+}
 

@@ -11,7 +11,7 @@
     "serve": "node dist/server.js",
     "babel": "babel",
     "webpack": "webpack --watch",
-    "sync-assets" : "cp -r ./App/sass/* node_modules/bootstrap-sass/assets/stylesheets;"
+    "sync-assets": "cp -r ./App/sass/* node_modules/bootstrap-sass/assets/stylesheets;"
   },
   "keywords": [
     "playground",

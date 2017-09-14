@@ -26,10 +26,7 @@ app.get('*', (req, res) => {
     const matchRoute = Routes.reduce((acc, route) => matchPath(req.url, route.path, route.exact) || acc, null);
 
     var context = {}
-    console.log('req.url:', req.url);
-    console.log('matchRoute', matchRoute);
     if(!matchRoute) {
-        console.log('masuk not found')
         res.status(404).send(renderer(<NotFound />));
         return;
     }
@@ -45,6 +42,7 @@ app.get('*', (req, res) => {
     }
 
 });
+//MARK: For React Router 3
 // app.get('*', (req, res) => {
 //     matchPath( //match as two parameters, the objects and the function
 //         {routes, location: req.url},

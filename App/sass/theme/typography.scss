@@ -1,15 +1,14 @@
-//MARK: Font families and base
-$font-family-sans-serif:    'Lato', sans-serif !default;
-$font-family-serif:         'Source Serif Pro', serif;
-$font-family-base:          $font-family-sans-serif;
+.heavy-font {
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height
+}
 
-//MARK: Font Size & weight
-$font-size-base:            15px;
-$font-weight-base:          light;
+.medium-font {
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+}
 
-$line-height-base:          1.4 !default;
-
-//MARK: Headings family
-$headings-font-family:      'Lato', sans-serif !default;
-$headings-font-weight:      700 !default;
-$headings-line-height:      1.5 !default;
+.lighter-font {
+    font-weight: light;
+    line-height: $line-height-base;
+}
