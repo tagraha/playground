@@ -8,7 +8,7 @@ class Home extends Component {
           {name: 'Analytics', pathSlug: 'analytics'},
           {name: 'D3 JS', pathSlug: 'd3-js'},
           {name: 'React Bootstrap', pathSlug: 'react-bootstrap'},
-          {name: 'SnapSvg', pathSlug: 'SnapSvg'}
+          {name: 'SnapSvg', pathSlug: 'snapsvg'}
       ]
       this.state = {
           promotedmenus: promotedMenus
