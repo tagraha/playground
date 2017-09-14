@@ -16,6 +16,6 @@ To compile and watch changes, type `npm run webpack` on the terminal
 To build the project, type `npm run build` on the terminal
 To start the project, type `npm run start-server` on the terminal
 
-##Credits
+## Credits
 Home animation are taken from https://www.lottiefiles.com/410-lego-loader
 Created by Chris Gannon
