@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Analytics, D3Graph, SnapSvg, ReactBootstrap, NotFound } from '../../components';
+import { Analytics, D3Graph, SnapSvg, ReactBootstrap, NotFound, MomentJs } from '../../components';
 
 class Showcase extends Component {
     constructor() {
@@ -11,6 +11,7 @@ class Showcase extends Component {
         this.renderAnalytics = this._renderAnalytics.bind(this);
         this.renderReactBootstrap = this._renderReactBootstrap.bind(this);
         this.renderSnapSvg = this._renderSnapSvg.bind(this);
+        this.renderMomentJs = this._renderMomentJs.bind(this);
     }
 
     componentDidMount() {
@@ -24,12 +25,14 @@ class Showcase extends Component {
       return ( <Analytics /> )
     }
     _renderReactBootstrap() {
-        return ( <ReactBootstrap /> )
+      return ( <ReactBootstrap /> )
     }
     _renderSnapSvg() {
-        return ( <SnapSvg /> )
+      return ( <SnapSvg /> )
     }
-    
+    _renderMomentJs() {
+      return( <MomentJs /> )
+    }
     render() {
       const { match } = this.props;
       const { testLifeCycle } = this.state;
@@ -52,6 +55,9 @@ class Showcase extends Component {
       }
       else if(match.params.pathSlug === 'snapsvg') {
         return this.renderSnapSvg();
+      }
+      else if(match.params.pathSlug === 'moment-js') {
+        return this.renderMomentJs();
       }
       else {
         return ( <NotFound /> )

@@ -6,17 +6,55 @@ $bootstrap-sass-asset-helper: true; //this will make bootstrap sass available fo
 @import "./override.scss";
 
 .header {
-    background-color: $accent-dark;
-    > h1 {
-        color: $white;
-        padding: 15px 15px;
-    }
+  background-color: $accent-dark;
+  > h1 {
+    color: $white;
+    padding: 15px 15px;
+  }
 }
 .wrap {
-    width: 100%
+  width: 100%
 }
 .iframe-home {
-    max-height: 200px;
-    text-align: center;
+  max-height: 200px;
+  text-align: center;
+}
+.wrapper-sq-400 {
+  max-width: 400px;
+  max-height: 400px;
 }
 
+.tooltip {
+  width: 300px;
+  background: #cccccc;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 5px;
+  position: relative;
+  >.card-img-container {
+    max-width: 250px;
+    max-height: 250px;
+    overflow: hidden;  
+  }
+  > img {
+    display: block;
+    max-width: 300px;
+    max-height:200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  >.card-container {
+    padding: 10px 15px;
+  }
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+.img-full-width{
+    width: 100%;
+  }
