@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-server": "nodemon App/server.js --exec babel-node --presets react,es2015,stage-0 --watch",
+    "start-server": "npm run build && nodemon App/server.js --exec babel-node --presets react,es2015,stage-0 --watch",
     "build": "babel  App -d dist --presets react,es2015,stage-0",
     "serve": "node dist/server.js",
     "babel": "babel",
